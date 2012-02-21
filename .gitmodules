@@ -4,3 +4,15 @@
 [submodule ".vim/bundles/nerdcommenter"]
 	path = .vim/bundles/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter
+[submodule ".vim/bundles/snipmate"]
+	path = .vim/bundles/snipmate
+	url = git://github.com/msanders/snipmate.vim
+[submodule ".vim/bundles/tagbar"]
+	path = .vim/bundles/tagbar
+	url = git://github.com/majutsushi/tagbar
+[submodule ".vim/bundles/session"]
+	path = .vim/bundles/session
+	url = git://github.com/xolox/vim-session
+[submodule ".vim/bundles/surround"]
+	path = .vim/bundles/surround
+	url = git://github.com/tpope/vim-surround
