@@ -1,0 +1,84 @@
+" Syntax Highlighting
+syntax on
+
+" Keine Kombatibilität mehr mit VI
+set nocompatible
+
+" Enable Filetypes
+filetype on
+filetype plugin on
+filetype indent on
+
+" Zeilennummern anzeigen
+set number
+
+" Leerzeichen anstatt Tablulator
+set expandtab
+
+" 4 Leerzeichen pro Tab
+set tabstop=4
+set softtabstop=4
+
+" 4 Leerzeichen für Einrückung
+set shiftwidth=4
+
+" Show current position
+set ruler
+" Show commands
+set showcmd
+
+" Incremental searching
+set incsearch
+
+" Highlight searching
+set hlsearch
+
+" Indikator für Zeilenlänge 
+if exists('+colorcolumn')
+  set colorcolumn=120
+else
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
+  endif
+
+" Farbschema
+colorscheme zenburn
+
+" Font
+set guifont=Inconsolata\ 13
+
+" auto cd to buffer cwd
+autocmd BufEnter * lcd %:p:h
+
+" UTF-8 Enkodierung
+set enc=utf-8
+set fenc=utf-8
+set termencoding=utf-8
+
+" Einrückungen
+set autoindent
+set smartindent 
+
+" Autosave (Speichert beim Wechseln des Buffers etc.)
+set autowrite
+
+" Farben aktivieren
+set t_Co=256
+
+" CTAGS
+set tags=/home/t.reinwarth/.vim/mytags/projects
+
+let g:tagbar_ctags_bin='/usr/bin/ctags'
+let g:tagbar_width=26
+let g:tagbar_autofocus=1
+let g:tagbar_autoclose=1
+noremap <C-T> :TagbarToggle<CR>
+map <C-N> :NERDTreeToggle<CR>
+map <C-B> :BufExplorer<CR>
+inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
+nnoremap <C-P> :call PhpDocSingle()<CR>
+vnoremap <C-P> :call PhpDocRange()<CR> 
+
+"Map escape key to jj -- much faster  
+imap jj <esc>
+"Saves time; maps the spacebar to colon  
+nmap <space> :

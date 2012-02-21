@@ -1,0 +1,3 @@
+Just my vim configuration for php development.
+
+To use it just symlink .vim folder and .vimrc_mac in youre home directory
