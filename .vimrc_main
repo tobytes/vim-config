@@ -1,6 +1,15 @@
 " Syntax Highlighting
 syntax on
 
+" optimize php highlighting
+function OptimizePHP()
+    set nocursorline
+    set nocursorcolumn
+    syntax sync minlines=256
+endfunction
+
+autocmd BufRead,BufNewFile *.php, *.phtml call OptimizePHP()
+
 " Keine Kombatibilität mehr mit VI
 set nocompatible
 
