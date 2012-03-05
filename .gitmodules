@@ -16,9 +16,9 @@
 [submodule ".vim/bundles/surround"]
 	path = .vim/bundles/surround
 	url = git://github.com/tpope/vim-surround
-[submodule ".vim/bundles/ctrlp"]
-	path = .vim/bundles/ctrlp
-	url = git://github.com/kien/ctrlp.vim
 [submodule ".vim/bundles/Buffet"]
 	path = .vim/bundles/Buffet
 	url = git://github.com/sandeepcr529/Buffet.vim
+[submodule ".vim/bundles/autoclose"]
+	path = .vim/bundles/autoclose
+	url = git://github.com/Townk/vim-autoclose
