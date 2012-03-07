@@ -42,6 +42,16 @@ set incsearch
 " Highlight searching
 set hlsearch
 
+" Reselect visual block after indent/outdent
+vnoremap < <gv
+vnoremap > >gv
+
+" Easy split naviagation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
 " Indikator für Zeilenlänge 
 if exists('+colorcolumn')
   set colorcolumn=120
@@ -51,9 +61,6 @@ else
 
 " Farbschema
 colorscheme zenburn
-
-" Font
-set guifont=Inconsolata\ 13
 
 " auto cd to buffer cwd
 autocmd BufEnter * lcd %:p:h
@@ -73,21 +80,21 @@ set autowrite
 " Farben aktivieren
 set t_Co=256
 
-" CTAGS
-set tags=/home/t.reinwarth/.vim/mytags/projects
-
 let g:tagbar_ctags_bin='/usr/bin/ctags'
 let g:tagbar_width=26
 let g:tagbar_autofocus=1
 let g:tagbar_autoclose=1
 noremap <C-T> :TagbarToggle<CR>
 map <C-N> :NERDTreeToggle<CR>
-map <C-B> :BufExplorer<CR>
+map <C-B> :Bufferlist<CR>
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR> 
 
 "Map escape key to jj -- much faster  
 imap jj <esc>
+imap kj <esc>
+imap jk <esc>
+
 "Saves time; maps the spacebar to colon  
 nmap <space> :
