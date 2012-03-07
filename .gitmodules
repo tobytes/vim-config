@@ -22,3 +22,6 @@
 [submodule ".vim/bundles/autoclose"]
 	path = .vim/bundles/autoclose
 	url = git://github.com/Townk/vim-autoclose
+[submodule ".vim/bundles/phpcomplete"]
+	path = .vim/bundles/phpcomplete
+	url = git://github.com/shawncplus/phpcomplete.vim
