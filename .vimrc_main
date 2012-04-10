@@ -8,10 +8,13 @@ function OptimizePHP()
     syntax sync minlines=256
 endfunction
 
-autocmd BufRead,BufNewFile *.php, *.phtml call OptimizePHP()
+autocmd BufRead,BufNewFile *.php,*.phtml call OptimizePHP()
 
 " Keine Kombatibilität mehr mit VI
 set nocompatible
+
+" automaticaly read file when changed outside
+set autoread
 
 " Enable Filetypes
 filetype on
@@ -42,6 +45,9 @@ set incsearch
 " Highlight searching
 set hlsearch
 
+" Remap leader to comma
+let mapleader = ","
+
 " Reselect visual block after indent/outdent
 vnoremap < <gv
 vnoremap > >gv
@@ -51,6 +57,16 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" Turn off arrow keys for learning
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
 
 " Indikator für Zeilenlänge 
 if exists('+colorcolumn')
@@ -80,6 +96,12 @@ set autowrite
 " Farben aktivieren
 set t_Co=256
 
+" working directory is always directory of current buffer
+set autochdir
+
+" Correct NERDTree directory behaviour
+let g:NERDTreeChDirMode=2
+
 let g:tagbar_ctags_bin='/usr/bin/ctags'
 let g:tagbar_width=26
 let g:tagbar_autofocus=1
@@ -98,3 +120,6 @@ imap jk <esc>
 
 "Saves time; maps the spacebar to colon  
 nmap <space> :
+
+" Show statusline constantly
+set laststatus=2

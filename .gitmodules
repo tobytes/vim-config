@@ -25,3 +25,6 @@
 [submodule ".vim/bundles/phpcomplete"]
 	path = .vim/bundles/phpcomplete
 	url = git://github.com/shawncplus/phpcomplete.vim
+[submodule ".vim/bundles/powerline"]
+	path = .vim/bundles/powerline
+	url = git://github.com/Lokaltog/vim-powerline
