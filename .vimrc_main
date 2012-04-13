@@ -92,6 +92,8 @@ set smartindent
 
 " Autosave (Speichert beim Wechseln des Buffers etc.)
 set autowrite
+" Autosave All when buffer or window loose focus
+autocmd BufLeave,FocusLost silent! wall
 
 " Farben aktivieren
 set t_Co=256
