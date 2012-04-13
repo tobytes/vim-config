@@ -16,6 +16,9 @@ set nocompatible
 " automaticaly read file when changed outside
 set autoread
 
+" Hide GUI Toolbar
+set guioptions-=T
+
 " Enable Filetypes
 filetype on
 filetype plugin on
@@ -101,6 +104,8 @@ set autochdir
 
 " Correct NERDTree directory behaviour
 let g:NERDTreeChDirMode=2
+" Powerline colorscheme
+let g:Powerline_colorscheme = 'zenburn'
 
 let g:tagbar_ctags_bin='/usr/bin/ctags'
 let g:tagbar_width=26
