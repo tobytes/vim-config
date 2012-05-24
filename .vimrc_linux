@@ -13,3 +13,6 @@ set tags=/home/t.reinwarth/.mytags/projects
 
 let g:syntastic_phpcs_conf='--standard=UnisterPHP'
 let g:syntastic_auto_loc_list=1
+
+" Path to Ack
+let g:path_to_search_app = "/home/t.reinwarth/bin/ack"
