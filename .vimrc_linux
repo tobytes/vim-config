@@ -5,9 +5,6 @@ source ~/vim-config/.vimrc_main
 " Font
 set guifont=Inconsolata\ 13
 
-" PHP parser check (CTRL-L)
-:autocmd FileType php noremap <C-L> :!/usr/bin/php -l %<CR>
-
 " CTAGS
 set tags=/home/t.reinwarth/.mytags/projects
 

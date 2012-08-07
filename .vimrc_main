@@ -107,7 +107,19 @@ set autochdir
 " Correct NERDTree directory behaviour
 let g:NERDTreeChDirMode=2
 " Powerline colorscheme
-let g:Powerline_colorscheme = 'zenburn'
+" let g:Powerline_colorscheme = 'zenburn'
+" Buffergator MRU sorting
+let g:buffergator_sort_regime='mru'
+" Buffergator horizontal split window
+let g:buffergator_viewport_split_policy='T'
+" Buffergator no autoresize window
+let g:buffergator_autoexpand_on_split='0'
+" Buffergator split window size
+let g:buffergator_split_size='10'
+
+" Author for snipmate
+let g:snips_author='Tobias Reinwarth <tobias.reinwarth@unister.de>'
+let g:snips_author_firm='Unister GmbH  <teamleitung-dev@unister.de>'
 
 let g:tagbar_ctags_bin='/usr/bin/ctags'
 let g:tagbar_width=26
@@ -115,7 +127,7 @@ let g:tagbar_autofocus=1
 let g:tagbar_autoclose=1
 noremap <C-T> :TagbarToggle<CR>
 map <C-N> :NERDTreeToggle<CR>
-map <C-B> :Bufferlist<CR>
+map <C-B> :BuffergatorToggle<CR>
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR> 
