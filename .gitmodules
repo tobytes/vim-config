@@ -31,3 +31,6 @@
 [submodule ".vim/bundles/buffergator"]
 	path = .vim/bundles/buffergator
 	url = git://github.com/jeetsukumaran/vim-buffergator
+[submodule ".vim/bundles/DBGPavim"]
+	path = .vim/bundles/DBGPavim
+	url = git://github.com/brookhong/DBGPavim

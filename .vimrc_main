@@ -125,6 +125,11 @@ let g:tagbar_ctags_bin='/usr/bin/ctags'
 let g:tagbar_width=26
 let g:tagbar_autofocus=1
 let g:tagbar_autoclose=1
+
+" Debugging
+let g:dbgPavimPort = 9009
+let g:dbgPavimBreakAtEntry = 0
+
 noremap <C-T> :TagbarToggle<CR>
 map <C-N> :NERDTreeToggle<CR>
 map <C-B> :BuffergatorToggle<CR>
