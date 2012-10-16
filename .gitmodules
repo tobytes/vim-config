@@ -34,3 +34,6 @@
 [submodule ".vim/bundles/DBGPavim"]
 	path = .vim/bundles/DBGPavim
 	url = git://github.com/brookhong/DBGPavim
+[submodule ".vim/bundles/php-getter-setter"]
+	path = .vim/bundles/php-getter-setter
+	url = git://github.com/docteurklein/php-getter-setter.vim.git

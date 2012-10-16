@@ -76,7 +76,7 @@ if exists('+colorcolumn')
   set colorcolumn=120
 else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
-  endif
+endif
 
 " Farbschema
 colorscheme zenburn
@@ -129,6 +129,18 @@ let g:tagbar_autoclose=1
 " Debugging
 let g:dbgPavimPort = 9009
 let g:dbgPavimBreakAtEntry = 0
+
+" Getter/Setter
+"let b:phpgetset_getterTemplate =
+    "\ "\n" .
+    "\ "/**\n" .
+    "\ " * Gibt %varname% zurück \n" .
+    "\ " * @return %varname%\n" .
+    "\ " */\n" .
+    "\ "public function %funcname%()\n" .
+    "\ "{\n" . 
+    "\ "return $this->%varname%;\n" .
+    "\ "}"
 
 noremap <C-T> :TagbarToggle<CR>
 map <C-N> :NERDTreeToggle<CR>

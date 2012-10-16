@@ -3,7 +3,7 @@ call pathogen#runtime_prepend_subdirectories(expand('~/vim-config/.vim/bundles')
 source ~/vim-config/.vimrc_main
 
 " Font
-set guifont=Inconsolata\ 13
+set guifont=Inconsolata-g\ 11
 
 " CTAGS
 set tags=/home/t.reinwarth/.mytags/projects
