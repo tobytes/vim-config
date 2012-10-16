@@ -1,3 +1,21 @@
 Just my vim configuration for php development.
 
-To use it just symlink .vim folder and .vimrc_mac in youre home directory
+Installation:
+
+1. Clone vim-config to your home directory:
+git clone git://github.com/tobytes/vim-config
+
+2. Go to the vim-config directory and init, update the submodules
+$ cd ~/vim-config
+$ git submodule init
+$ git submodule update
+
+3. Symlink the .vim folder an the .vimrc for your system in your home directory
+$ cd ~
+$ ln -s vim-config/.vim .vim
+$ ln -s vim-config/.vimrc_linux .vimrc
+or
+$ ln -s vim-config/.vimrc_mac .vimrc
+
+4. Have fun :)
+
