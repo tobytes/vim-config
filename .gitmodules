@@ -37,3 +37,6 @@
 [submodule ".vim/bundles/php-getter-setter"]
 	path = .vim/bundles/php-getter-setter
 	url = git://github.com/docteurklein/php-getter-setter.vim.git
+[submodule ".vim/bundles/vim-less"]
+	path = .vim/bundles/vim-less
+	url = https://github.com/groenewege/vim-less.git
