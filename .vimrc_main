@@ -1,9 +1,6 @@
-" Syntax Highlighting
+" Syntax highlighting and colors
 syntax on
-
 set background=dark
-
-" Farbschema
 colorscheme zenburn
 
 " optimize php highlighting
@@ -44,6 +41,7 @@ set shiftwidth=4
 
 " Show current position
 set ruler
+
 " Show commands
 set showcmd
 
@@ -97,6 +95,7 @@ set smartindent
 
 " Autosave (Speichert beim Wechseln des Buffers etc.)
 set autowrite
+
 " Autosave All when buffer or window loose focus
 autocmd BufLeave,FocusLost silent! wall
 
@@ -144,6 +143,7 @@ let g:dbgPavimBreakAtEntry = 0
     "\ "return $this->%varname%;\n" .
     "\ "}"
 
+" Shortcuts
 noremap <C-T> :TagbarToggle<CR>
 map <C-N> :NERDTreeToggle<CR>
 map <C-B> :BuffergatorToggle<CR>

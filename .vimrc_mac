@@ -1,6 +1,9 @@
-call pathogen#helptags()
-call pathogen#runtime_prepend_subdirectories(expand('~/vim-config/.vim/bundles'))
 source ~/vim-config/.vimrc_main
 
 " Font
 set guifont=Inconsolata:h16
+" Disable bells
+set noerrorbells
+set novisualbell
+set t_vb=
+autocmd! GUIEnter * set vb t_vb=

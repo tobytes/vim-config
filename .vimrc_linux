@@ -1,5 +1,3 @@
-call pathogen#helptags()
-call pathogen#runtime_prepend_subdirectories(expand('~/vim-config/.vim/bundles'))
 source ~/vim-config/.vimrc_main
 
 " Font
